@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillScope</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ <header class="navbar">
+    <div class="logo">SkillScope</div>
+    <nav>
+      <a href="#skill-scope">Quiz</a>
+      <a href="#notes-section">Notes</a>
+    </nav>
+  </header>
+
+  <div id="splash-screen">
+  <h1>✨ Welcome to SkillScope ✨</h1>
+  <p>Crafted with 💖 by HEMA</p>
+</div>
+
+  <section id="skill-scope" class="container">
+  <h1>SkillScope: Choose Your Skill</h1>
+ <div class="tech-selector">
+  <button onclick="loadQuiz('html')">📄 HTML</button>
+  <button onclick="loadQuiz('css')">🎨 CSS</button>
+  <button onclick="loadQuiz('js')">🧠 JavaScript</button>
+  <button onclick="loadQuiz('java')">☕ Java</button>
+  <button onclick="loadQuiz('python')">🐍 Python</button>
+  <button onclick="loadQuiz('sql')">🗃️ SQL</button>
+  <button onclick="loadQuiz('mongodb')">🍃 MongoDB</button>
+  <button onclick="loadQuiz('nextjs')">⚛️ Next.js</button>
+  <button onclick="loadQuiz('nodejs')">🔧 Node.js</button>
+  <button onclick="loadQuiz('expressjs')">🚀 Express.js</button>
+</div>
+
+  <div id="quiz-area"></div>
+</section>
+
+
+    <section id="notes-section" class="tech-notes">
+      <br>
+  <h1 class="notes-heading">📘 Notes of Technology</h1>
+
+  <div class="note-card">
+    <h2>1. HTML</h2>
+    <ul>
+      <li>Structures web content with tags like &lt;div&gt;, &lt;a&gt;, &lt;img&gt;.</li>
+      <li>Semantic elements improve accessibility and SEO.</li>
+      <li>Uses attributes like href, src, and alt.</li>
+      <li>Supports multimedia through video and audio tags.</li>
+      <li>HTML5 introduced local storage and geolocation.</li>
+    </ul>
+  </div>
+
+  <div class="note-card">
+    <h2>2. CSS</h2>
+    <ul>
+      <li>Styles layout, colors, fonts, and positioning.</li>
+      <li>Uses selectors to target HTML elements.</li>
+      <li>Supports animations and transitions.</li>
+      <li>Media queries enable responsive design.</li>
+      <li>Can be inline, internal, or external stylesheets.</li>
+    </ul>
+  </div>
+
+  <div class="note-card">
+    <h2>3. JAVASCRIPT</h2>
+    <ul>
+      <li>Adds interactivity: popups, form validation, animations, and APIs.</li>
+      <li>Supports DOM manipulation via document.querySelector, .addEventListener.</li>
+      <li>Variables: declared using let, const, var.</li>
+      <li>Functions, loops, and conditional logic form core building blocks.</li>
+      <li>Can be embedded within HTML or loaded as external scripts.</li>
+    </ul>
+  </div>
+
+  <div class="note-card">
+    <h2>4. JAVA</h2>
+    <ul>
+      <li>Statically typed, object-oriented language used in enterprise and Android apps.</li>
+      <li>Code is compiled to bytecode and executed on the JVM (Java Virtual Machine).</li>
+      <li>Uses classes and methods—entry point via public static void main().</li>
+      <li>Supports inheritance, encapsulation, and interfaces for modular design.</li>
+      <li>Popular frameworks include Spring, Hibernate, and JavaFX.</li>
+    </ul>
+  </div>
+
+  <div class="note-card">
+    <h2>5. PYTHON</h2>
+    <ul>
+      <li>Interpreted language known for readability and simplicity.</li>
+      <li>Used in data science, web development, automation, and AI.</li>
+      <li>Common libraries: NumPy, Pandas, Flask, Django, Matplotlib.</li>
+      <li>Supports object-oriented, functional, and procedural programming.</li>
+      <li>Uses indentation to define code blocks—no curly braces needed.</li>
+    </ul>
+  </div>
+
+  <div class="note-card">
+    <h2>6. SQL</h2>
+    <ul>
+      <li>Used to manage and query relational databases.</li>
+      <li>Core commands: SELECT, INSERT, UPDATE, DELETE.</li>
+      <li>Tables consist of rows and columns—primary key identifies rows uniquely.</li>
+      <li>JOIN operations combine data from multiple tables.</li>
+      <li>Queries can be filtered using WHERE, sorted with ORDER BY.</li>
+    </ul>
+  </div>
+
+  <div class="note-card">
+    <h2>7. MongoDB</h2>
+    <ul>
+      <li>Used to manage and query NoSQL databases.</li>
+      <li>Data is stored in flexible, JSON-like documents.</li>
+      <li>Core operations include CRUD (Create, Read, Update, Delete).</li>
+      <li>Supports indexing for efficient query performance.</li>
+      <li>Aggregation framework enables complex data processing.</li>
+    </ul>
+  </div>
+    
+
+  <div class="note-card">
+    <h2>8. Next.js</h2>
+    <ul>
+      <li>Framework for building server-rendered React applications.</li>
+      <li>Supports static site generation (SSG) and server-side rendering (SSR).</li>
+      <li>File-based routing system simplifies page creation.</li>
+      <li>API routes enable backend functionality within the app.</li>
+      <li>Optimized for performance with automatic code splitting.</li>
+    </ul>
+  </div>
+    
+
+  <div class="note-card">
+    <h2>9. Node.js</h2>
+    <ul>
+      </li>Executes JavaScript outside the browser—used for backend systems.</li>
+      <li>Built on Chrome’s V8 engine; non-blocking I/O makes it scalable.</li>
+      <li>Modules like fs, http, and path handle server logic.</li>
+      <li>Common tools: Express.js, Socket.IO, Mongoose for databases.</li>
+      <li>Package management via npm (Node Package Manager).</li>
+    </ul>
+  </div>
+
+  <div class="note-card">
+    <h2>10. Express.js</h2>
+    <ul>
+      </li>Built on Node.js to simplify server routing and middleware.</li>
+      <li>Handles HTTP requests with app.get(), app.post(), etc.</li>
+      <li>Middleware functions allow request preprocessing and error handling.</li>
+      <li>Ideal for building RESTful APIs and web servers.</li>
+      <li>Lightweight and flexible, often paired with MongoDB.</li>
+       </ul>
+  </div>
+
+</section>
+<footer style="text-align:center; padding:20px; background:#000c20; color:#00ffcc;">
+  💻 Built with 💖 by HEMA | SkillScope 2025
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
