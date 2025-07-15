@@ -16,16 +16,6 @@ It features:
 
 💖 Crafted with love by HEMA
 
-📱 Redmi-Friendly Experience
-Tested and optimized for Redmi devices like:
-
-Redmi 13 5G
-
-Redmi Pad 2
-
-Redmi Note 14 Series
-
-Whether you're using a Redmi phone or tablet, SkillScope adapts beautifully to screen sizes and touch interactions.
 
 🛠️ Technologies Used
 HTML5
